@@ -1,80 +1,7 @@
-.container {
-    max-width: 1280px;
-    margin: 0px auto;
-}
-
-.ao {
-    background-color: rgba(236, 231, 231, 0.755);
-    margin: 0px auto;
-    height: 60px;
-    margin-top: -9px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-}
-
-.menu-ao {
-    display: flex;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.menu-ao li a {
-    display: block;
-    padding: 18px 20px;
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    border-right: none;
-}
-
-.menu-ao ul li a>:last-child {
-    border-right: 1px solid black;
-}
-
-.menu-ao li a:hover {
-    background-color: rgba(0, 0, 0, 0.749);
-    color: aliceblue;
-}
-
-article {
-    height: 1100px;
-}
-
-article .content .items {
-    width: 20%;
-    padding: 2%;
-    float: left;
-    border: 1px solid black;
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-.items {
-    background-color: aliceblue;
-}
-
-footer .last ul {
-    padding: 30px;
-    float: left;
-}
-
-footer .last ul li {
-    list-style: none;
-    margin-left: 60px;
-}
-
-footer .last ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-footer .last ul li a:hover {
-    color: rgb(29, 174, 113);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Begin nav bar */
@@ -190,4 +117,106 @@ footer .last ul li a:hover {
     display: block;
 }
 
-/* End navbar */
+/* css cho phan danh sach hinh anh */
+.w3-content {
+    max-width: 1564px;
+}
+
+.projects {
+    padding: 32px;
+    margin-top: 250px;
+
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 24px;
+}
+
+.projects-content-img img {
+    width: 100%;
+}
+
+.projects-content-img {
+    width: 100%;
+    position: relative;
+}
+
+.projects-container {
+    display: flex;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.display-in-img {
+    position: absolute;
+    top: 0;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* desktop */
+@media screen and (min-width: 993px) {
+    .projects-container {
+        width: 24%;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 992px) {
+    .projects-container {
+        width: 50%;
+
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 601px) {
+    .projects-container {
+        width: 100%;
+    }
+}
+
+.item-2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.money {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* footer */
+footer .last ul {
+    padding: 30px;
+    float: left;
+}
+
+footer .last ul li {
+    list-style: none;
+    margin-left: 60px;
+}
+
+footer .last ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .last ul li a:hover {
+    color: rgb(29, 174, 113);
+}
